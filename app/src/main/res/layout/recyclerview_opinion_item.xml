@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/border_opinion"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp">
+
+    <TextView
+        android:id="@+id/web_title_for_opinion"
+        style="@style/main_text"
+        tools:text="Commons may never return to packed chamber debates, says Speaker" />
+
+    <TextView
+        android:id="@+id/publication_date_for_opinion"
+        style="@style/text"
+        tools:text="2020-07-26" />
+
+    <TextView
+        android:id="@+id/section_name_for_opinion"
+        style="@style/text"
+        tools:text="Politics" />
+
+</LinearLayout>
