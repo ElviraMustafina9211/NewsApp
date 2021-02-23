@@ -2,12 +2,15 @@ package com.example.newsapp
 
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 @Module
-class AppModule {
+@InstallIn (ApplicationComponent::class)
+object AppModule {
 
     @Provides
     fun newsRepository(newsApi: NewsApi): NewsRepository {
