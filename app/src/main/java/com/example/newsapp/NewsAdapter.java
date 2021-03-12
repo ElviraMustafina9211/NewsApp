@@ -15,7 +15,7 @@ public class NewsAdapter extends RecyclerView.Adapter<BaseHolder> {
     public static final int POLITICS_TYPE = 1;
     public static final int BUSINESS_TYPE = 2;
     public static final int OPINION_TYPE = 3;
-    public static final int UK_NEWS_TYPE = 4;
+    public static final int NEWS_TYPE = 4;
     public static final int OTHER_TYPE = 5;
 
     @NonNull
@@ -35,7 +35,8 @@ public class NewsAdapter extends RecyclerView.Adapter<BaseHolder> {
             case "Opinion":
                 return OPINION_TYPE;
             case "UK news":
-                return UK_NEWS_TYPE;
+            case "World news":
+                return NEWS_TYPE;
             default:
                 return OTHER_TYPE;
         }
@@ -48,7 +49,7 @@ public class NewsAdapter extends RecyclerView.Adapter<BaseHolder> {
         switch (viewType) {
             case POLITICS_TYPE:
             case BUSINESS_TYPE:
-            case UK_NEWS_TYPE:
+            case NEWS_TYPE:
                 View itemView = inflater.inflate(R.layout.recyclerview_news_item, parent, false);
                 return new ArticleNewsHolder(itemView);
             case OPINION_TYPE:
