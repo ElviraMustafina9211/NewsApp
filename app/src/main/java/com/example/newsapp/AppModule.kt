@@ -14,7 +14,7 @@ object AppModule {
 
     @Provides
     fun newsRepository(newsApi: NewsApi): NewsRepository {
-        return NewsRepository(newsApi)
+        return NewsRepositoryImpl(newsApi)
     }
 
     @Provides
