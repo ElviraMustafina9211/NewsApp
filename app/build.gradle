@@ -32,6 +32,10 @@ android {
     kapt {
         generateStubs = true
     }
+
+    lintOptions {
+        textReport true
+    }
 }
 
 dependencies {
